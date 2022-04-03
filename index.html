@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name='viewport' content="width=device-width, initial-scale=1">
-	<title></title>
-</head>
-<body>
-	 <button onclick="document.getElementById('two').style.fontSize='50px'">make text bigger</button>
-	 <p id='two'>Text</p>
-	 
-	 <button onclick="document.getElementById('one').src='https://tse3.explicit.bing.net/th?id=OIP.K8Ht4reUCJsWdcyHgejx0AHaFj&pid=Api&P=0&w=209&h=156'">Replace the image</button>
-	 <img id='one'src='https://tse1.mm.bing.net/th?id=OIP.cDIZmmpPo760fkLz1IG71wHaEK&pid=Api&P=0&w=317&h=178'>
-	 
-	 <button onclick="document.getElementById('three').style.display='none'">Make the image disappear</button>
-	 <img id='three' src='https://tse1.mm.bing.net/th?id=OIP.cDIZmmpPo760fkLz1IG71wHaEK&pid=Api&P=0&w=317&h=178'>
-	 <br>
-	 
-	 <button onclick="document.getElementById('four').innerHTML='new'">Change the text to something new</button>
-	 <p id='four'>Text</p>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        
+        <style type="text/css">
+        	#times{
+        		font-size: 30px;
+        	}
+            
+        </style>
 
-	 <button onclick="document.getElementById('five').style.width='200px'">Make the image shorter</button>
-	 <img id='five' src='https://tse1.mm.bing.net/th?id=OIP.cDIZmmpPo760fkLz1IG71wHaEK&pid=Api&P=0&w=317&h=178'>
 
-	 <button onclick="document.write(alert(Date()))">alert box showing time</button>
+    </head>
+    
+    <center><body onkeydown="change0()">
+       
+ 
 
-	 <button onclick="document.write(10+10)">show 10+10</button>
-	 
+        <img src="https://images.yen.com.gh/images/fa0ead94f089d1d5.jpg?imwidth=720" width="200px" height="100px" id="img1" onmouseover="image()">
+        <br>
 
-	</body>
+        <p id="paragraph">12345678909</p>
+        <button onclick="change()">click to change the text</button><br><br>
+
+        <p>Press a key to see alert box</p>
+
+        <p id="change1" style="text-align: left; font-size: 25px;">Text Text Text</p>
+        <button onclick="change1()">make three changes after you click this</button>
+
+        <p id="one">20 degrees Fahrenhelt</p>
+        <button onclick="change2()">Click to convert F to C</button><br><br>
+
+        <button onclick="change3()">Calculator Simulator</button><br><br>
+
+        <button onclick="change4()">enter your name after clicking the button</button>
+
+        <script type="text/javascript" src="test.js"></script>
+    </body></center>
 </html>
